@@ -1,7 +1,7 @@
 # Dilemma V2 - Bastard Keyboards
 Since getting my first split keyboard I never stopped trying to optimize my keymap to the point that the most noticable discomfort was having to switch over to the mouse every now and then. I tried mouse keys, but could never get used to them so I started looking at the keyboards offered on bastardkb.com. The OLED displays I had before were only used for layer/mod indicators, which I thought would be easier to spot if the keys themselves lit up as indicators with RGB. Throw in rotary encoders which I didn't have before and the decision was made.
 
-[![Dilemma V2](assets/dilemma%20v2/cover.jpg)](docs/dilemma%20v2.md)
+[Dilemma V2](assets/dilemma%20v2/cover.jpg)
 
 ## Material List
 If you want to build this keyboard yourself, here's what you need:
