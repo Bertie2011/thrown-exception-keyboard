@@ -1,0 +1,161 @@
+[
+  {
+    "backcolor": "#00000000",
+    "author": "ThrownException"
+  },
+  [
+    {
+      "c": "#aee6e6",
+      "a": 7
+    },
+    "⌦",
+    {
+      "c": "#b0b0b0"
+    },
+    "HOME",
+    {
+      "c": "#cccccc"
+    },
+    "<i class='kb kb-Arrows-Up'></i>",
+    {
+      "c": "#b0b0b0"
+    },
+    "END",
+    "€",
+    {
+      "x": 2,
+      "c": "#dfe595"
+    },
+    "⎇",
+    {
+      "c": "#cccccc"
+    },
+    "7",
+    "8",
+    {
+      "a": 5
+    },
+    ",\n9",
+    {
+      "c": "#b0b0b0"
+    },
+    ":\n."
+  ],
+  [
+    {
+      "c": "#aee6e6",
+      "a": 7
+    },
+    "⭾",
+    {
+      "c": "#cccccc"
+    },
+    "<i class='kb kb-Arrows-Left'></i>",
+    "<i class='kb kb-Arrows-Down'></i>",
+    {
+      "n": true
+    },
+    "<i class='kb kb-Arrows-Right'></i>",
+    {
+      "c": "#b0b0b0"
+    },
+    "$",
+    {
+      "x": 0.5,
+      "c": "#cccccc",
+      "d": true
+    },
+    "SET\n\n\n\ncombo",
+    {
+      "x": 0.5,
+      "c": "#dfe595"
+    },
+    "<i class='kb kb-Unicode-Control-1'></i>",
+    {
+      "c": "#cccccc",
+      "n": true
+    },
+    "4",
+    "5",
+    {
+      "a": 5
+    },
+    "_\n6",
+    {
+      "c": "#b0b0b0"
+    },
+    "-\n0"
+  ],
+  [
+    {
+      "c": "#aee6e6",
+      "a": 7
+    },
+    "<i class='kb kb-Arrows-Up-Left'></i>",
+    {
+      "c": "#b0b0b0"
+    },
+    "<i class='fa fa-cut'></i>",
+    "<i class='fa fa-copy'></i>",
+    "<i class='fa fa-paste'></i>",
+    "%",
+    {
+      "x": 0.5,
+      "c": "#cccccc",
+      "d": true
+    },
+    "CAPS WORD\n\n\n\ncombo",
+    {
+      "x": 0.5,
+      "c": "#dfe595"
+    },
+    "⇧",
+    {
+      "c": "#cccccc"
+    },
+    "1",
+    "2",
+    "3",
+    {
+      "c": "#b0b0b0"
+    },
+    "<i class='kb kb-Return-2'></i>"
+  ],
+  [
+    {
+      "y": 0.5,
+      "x": 2,
+      "a": 5,
+      "f": 1
+    },
+    "LOCK\n\n\n\nROT\n\nWINDOW",
+    {
+      "c": "#cccccc",
+      "a": 7,
+      "f": 3
+    },
+    "SYM\n\n\n\nOSL",
+    {
+      "n": true
+    },
+    "⎵",
+    {
+      "x": 0.5,
+      "d": true
+    },
+    "EXIT\n\n\n\ncombo",
+    {
+      "x": 0.5,
+      "n": true
+    },
+    "⌫",
+    "⇧\n\n\n\nOSM",
+    {
+      "c": "#b0b0b0",
+      "a": 5,
+      "f": 1,
+      "l": true
+    },
+    "PAUSE\n\n\n\nROT\n\nVOLUME"
+  ]
+]
