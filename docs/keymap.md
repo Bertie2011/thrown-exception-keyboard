@@ -22,20 +22,23 @@ The layer follows Colemak Mod-DH. The non-alpha keys have been filled by most fr
 ## Symbols Layer
 
 ### Zones
-The symbols layer actually consists of 3 partial layers (let's call them zones), that together fill the entire keyboard. Using custom code each zone can be turned off whenever a key outside that zone is pressed. That way each zone can be used repeatedly, while always having access to the base layer when you need it, without having to deactivate the symbols layer.
+The symbols layer actually consists of 3 partial layers (let's call them zones), that together fill the entire keyboard. Using custom code pressing a key in one zone, will turn the others off. That way each zone can be used repeatedly, while always having access to the base layer when you need it, without having to deactivate the symbols layer.
 
 Note that ESC within the navbar zone also turns that zone off.
 
 This makes the following example sequences work:
 * Delete characters and type new text:
   * `SYM` (turns all zones on)
-  * `DEL` (causes symbols and mod zones to turn off - hold or repeatedly press)
-  * start typing (now the navbar zone turns off).
+  * `DEL` (causes symbols and mod zones to turn off)
+  * `DEL` (repeat as much as needed, the navbar zone is still available)
+  * start typing (now the navbar zone turns off)
+  * the base layer is completely uncovered now, all zones have been turned off
 * Save all files in editor:
-  * `SYM` (turns all zones on),
-  * `CTRL` (causes navbar and symbols zones to turn off),
-  * `SHIFT` (mod zone was still on),
-  * `S` (now mod zone turns off as well).
+  * `SYM` (turns all zones on)
+  * `CTRL` (causes navbar and symbols zones to turn off)
+  * `SHIFT` (mod zone was still on)
+  * `S` (now mod zone turns off as well)
+  * the base layer is completely uncovered now, all zones have been turned off
 
 ### Summary
 On the right there are delete, tab and escape keys. On the bottom there is ALT on the left thumb, CTRL and SHIFT on the right thumb.
