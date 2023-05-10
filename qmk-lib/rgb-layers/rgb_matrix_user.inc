@@ -1,0 +1,5 @@
+RGB_MATRIX_EFFECT(X_LAYER_EFFECT)
+
+#ifdef RGB_MATRIX_CUSTOM_EFFECT_IMPLS
+bool X_LAYER_EFFECT(effect_params_t* params);
+#endif

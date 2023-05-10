@@ -11,8 +11,8 @@ This didn't feel right for me, because when I decide I want to put something on 
   * The [symbols layer](#symbols-layer) has a special implementation that allows repetition and base layer access at the same time. 
 * Exclusive layers, only 1 extra layer can be active at a time
 
-## Custom OSM implementation
-The OSM keys let you press a modifiier (Ctrl, Shift, Alt, Meta) once to lock it into place until the next key is pressed. At the time of creating my keymap the native QMK implementation had some weird bugs going on when multiple modifiers were pressed or toggled in quick succession. To resolve this, I wrote my own implementation that also supports temporary hold and maintaining active mods across layers.
+## QMK Libraries
+My keymap contains tons of custom code and concepts. If you want to really understand what's going on or would like to try out some unique features for yourself, check out my [QMK lib folder](/qmk-lib/README.md).
 
 ## Base Layer
 The layer follows Colemak Mod-DH. The non-alpha keys have been filled by most frequently used characters. The thumb keys are occupied by a symbols layer key, space, backspace and shift. Both inner (home) thumb keys can be pressed together to activate the navigation layer. The outer thumb keys are rotary encoders with key press functionality.
@@ -20,27 +20,8 @@ The layer follows Colemak Mod-DH. The non-alpha keys have been filled by most fr
 ![Base Layer](assets/keymap/base-layer.png)
 
 ## Symbols Layer
+The symbols layer consists of 3 [zones](/qmk-lib/zones/) that together fill the entire keyboard: The symbols zone, the nav bar zone and the mod zone. Note that ESC within the nav bar zone also turns that zone off.
 
-### Zones
-The symbols layer actually consists of 3 partial layers (let's call them zones), that together fill the entire keyboard. Using custom code pressing a key in one zone, will turn the others off. That way each zone can be used repeatedly, while always having access to the base layer when you need it, without having to deactivate the symbols layer.
-
-Note that ESC within the navbar zone also turns that zone off.
-
-This makes the following example sequences work:
-* Delete characters and type new text:
-  * `SYM` (turns all zones on)
-  * `DEL` (causes symbols and mod zones to turn off)
-  * `DEL` (repeat as much as needed, the navbar zone is still available)
-  * start typing (now the navbar zone turns off)
-  * the base layer is completely uncovered now, all zones have been turned off
-* Save all files in editor:
-  * `SYM` (turns all zones on)
-  * `CTRL` (causes navbar and symbols zones to turn off)
-  * `SHIFT` (mod zone was still on)
-  * `S` (now mod zone turns off as well)
-  * the base layer is completely uncovered now, all zones have been turned off
-
-### Summary
 On the right there are delete, tab and escape keys. On the bottom there is ALT on the left thumb, CTRL and SHIFT on the right thumb.
 
 ![Symbols Layer](assets/keymap/symbols-layer.png)
