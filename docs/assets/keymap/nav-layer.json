@@ -5,13 +5,10 @@
   },
   [
     {
-      "c": "#aee6e6",
+      "c": "#b0b0b0",
       "a": 7
     },
     "⌦",
-    {
-      "c": "#b0b0b0"
-    },
     "HOME",
     {
       "c": "#cccccc"
@@ -23,8 +20,7 @@
     "END",
     "€",
     {
-      "x": 2,
-      "c": "#dfe595"
+      "x": 2
     },
     "⎇",
     {
@@ -43,7 +39,6 @@
   ],
   [
     {
-      "c": "#aee6e6",
       "a": 7
     },
     "⭾",
@@ -68,7 +63,7 @@
     "SET\n\n\n\ncombo",
     {
       "x": 0.5,
-      "c": "#dfe595"
+      "c": "#b0b0b0"
     },
     "<i class='kb kb-Unicode-Control-1'></i>",
     {
@@ -81,20 +76,14 @@
       "a": 5
     },
     "_\n6",
-    {
-      "c": "#b0b0b0"
-    },
     "-\n0"
   ],
   [
     {
-      "c": "#aee6e6",
+      "c": "#b0b0b0",
       "a": 7
     },
     "<i class='kb kb-Arrows-Up-Left'></i>",
-    {
-      "c": "#b0b0b0"
-    },
     "<i class='fa fa-cut'></i>",
     "<i class='fa fa-copy'></i>",
     "<i class='fa fa-paste'></i>",
@@ -107,7 +96,7 @@
     "CAPS WORD\n\n\n\ncombo",
     {
       "x": 0.5,
-      "c": "#dfe595"
+      "c": "#b0b0b0"
     },
     "⇧",
     {
@@ -136,20 +125,22 @@
     },
     "SYM\n\n\n\nOSL",
     {
+      "a": 5,
+      "f2": 9,
       "n": true
     },
-    "⎵",
+    "⌫\n⎵",
     {
-      "x": 0.5,
-      "d": true
-    },
-    "EXIT\n\n\n\ncombo",
-    {
-      "x": 0.5,
+      "x": 2,
+      "a": 7,
+      "f": 3,
       "n": true
     },
-    "⌫",
     "⇧\n\n\n\nOSM",
+    {
+      "c": "#8c9fe5"
+    },
+    "EXIT",
     {
       "c": "#b0b0b0",
       "a": 5,

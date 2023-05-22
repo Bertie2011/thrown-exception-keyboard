@@ -41,8 +41,7 @@
   [
     {
       "x": 0.25,
-      "c": "#aee6e6",
-      "p": "R1"
+      "c": "#aee6e6"
     },
     "⭾",
     {
@@ -70,8 +69,7 @@
   [
     {
       "x": 0.25,
-      "c": "#aee6e6",
-      "p": "R1"
+      "c": "#aee6e6"
     },
     "<i class='kb kb-Arrows-Up-Left'></i>",
     {
@@ -121,13 +119,13 @@
       "c": "#dfe595",
       "n": true
     },
-    "⎇\n\n\n\nOSM",
+    "<i class='kb kb-Unicode-Control-1'></i>\n\n\n\nOSM",
     {
       "x": 2,
       "n": true
     },
-    "<i class='kb kb-Unicode-Control-1'></i>\n\n\n\nOSM",
     "⇧\n\n\n\nOSM",
+    "⎇\n\n\n\nOSM",
     {
       "c": "#b0b0b0",
       "a": 5,
