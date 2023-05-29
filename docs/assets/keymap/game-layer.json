@@ -89,19 +89,19 @@
     "",
     {
       "c": "#cccccc",
-      "f": 3
+      "f": 3,
+      "n": true
     },
+    "⎵",
     "SYM",
     {
-      "n": true
+      "x": 2
     },
-    "⎵",
-    {
-      "x": 2,
-      "n": true
-    },
-    "⎵",
     "<i class='kb kb-Arrows-Up-Left'></i>",
+    {
+      "n": true
+    },
+    "⎵",
     {
       "c": "#b0b0b0",
       "f": 1,

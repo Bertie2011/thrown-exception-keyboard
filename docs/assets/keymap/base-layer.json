@@ -72,33 +72,27 @@
   [
     {
       "y": 0.5,
-      "x": 2,
-      "c": "#b0b0b0",
-      "a": 5,
-      "f": 1
+      "x": 2
     },
-    "LOCK\n\n\n\nROT\n\nWINDOW",
-    {
-      "c": "#cccccc",
-      "a": 7,
-      "f": 3
-    },
-    "SYM\n\n\n\nOSL",
+    "NAV",
     {
       "n": true
     },
     "⎵",
+    "SYM\n\n\n\nOSL",
     {
       "x": 0.5,
       "d": true
     },
-    "NAV\n\n\n\ncombo",
+    "CAPW\n\n\n\nCombo",
     {
-      "x": 0.5,
+      "x": 0.5
+    },
+    "⇧\n\n\n\nOSM",
+    {
       "n": true
     },
     "⌫",
-    "⇧\n\n\n\nOSM",
     {
       "c": "#b0b0b0",
       "a": 5,

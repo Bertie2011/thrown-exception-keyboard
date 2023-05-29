@@ -5,13 +5,10 @@
   },
   [
     {
-      "c": "#aee6e6",
+      "c": "#b0b0b0",
       "a": 7
     },
     "⌦",
-    {
-      "c": "#b0b0b0"
-    },
     "HOME",
     {
       "c": "#cccccc"
@@ -23,8 +20,7 @@
     "END",
     "€",
     {
-      "x": 2,
-      "c": "#dfe595"
+      "x": 2
     },
     "⎇",
     {
@@ -43,7 +39,6 @@
   ],
   [
     {
-      "c": "#aee6e6",
       "a": 7
     },
     "⭾",
@@ -68,7 +63,7 @@
     "SET\n\n\n\ncombo",
     {
       "x": 0.5,
-      "c": "#dfe595"
+      "c": "#b0b0b0"
     },
     "<i class='kb kb-Unicode-Control-1'></i>",
     {
@@ -81,33 +76,20 @@
       "a": 5
     },
     "_\n6",
-    {
-      "c": "#b0b0b0"
-    },
     "-\n0"
   ],
   [
     {
-      "c": "#aee6e6",
+      "c": "#b0b0b0",
       "a": 7
     },
     "<i class='kb kb-Arrows-Up-Left'></i>",
-    {
-      "c": "#b0b0b0"
-    },
     "<i class='fa fa-cut'></i>",
     "<i class='fa fa-copy'></i>",
     "<i class='fa fa-paste'></i>",
     "%",
     {
-      "x": 0.5,
-      "c": "#cccccc",
-      "d": true
-    },
-    "CAPS WORD\n\n\n\ncombo",
-    {
-      "x": 0.5,
-      "c": "#dfe595"
+      "x": 2
     },
     "⇧",
     {
@@ -125,31 +107,23 @@
     {
       "y": 0.5,
       "x": 2,
-      "a": 5,
-      "f": 1
+      "c": "#8c9fe5"
     },
-    "LOCK\n\n\n\nROT\n\nWINDOW",
+    "EXIT",
     {
       "c": "#cccccc",
-      "a": 7,
-      "f": 3
-    },
-    "SYM\n\n\n\nOSL",
-    {
       "n": true
     },
     "⎵",
+    "SYM\n\n\n\nOSL",
     {
-      "x": 0.5,
-      "d": true
+      "x": 2
     },
-    "EXIT\n\n\n\ncombo",
+    "⇧\n\n\n\nOSM",
     {
-      "x": 0.5,
       "n": true
     },
     "⌫",
-    "⇧\n\n\n\nOSM",
     {
       "c": "#b0b0b0",
       "a": 5,

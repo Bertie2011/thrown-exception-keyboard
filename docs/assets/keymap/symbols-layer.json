@@ -41,8 +41,7 @@
   [
     {
       "x": 0.25,
-      "c": "#aee6e6",
-      "p": "R1"
+      "c": "#aee6e6"
     },
     "⭾",
     {
@@ -70,8 +69,7 @@
   [
     {
       "x": 0.25,
-      "c": "#aee6e6",
-      "p": "R1"
+      "c": "#aee6e6"
     },
     "<i class='kb kb-Arrows-Up-Left'></i>",
     {
@@ -105,29 +103,32 @@
     {
       "y": -0.75,
       "x": 2.25,
-      "c": "#b0b0b0",
+      "c": "#cccccc",
       "p": "R1",
       "a": 5,
-      "f": 1
+      "f": 2
     },
-    "SLEEP\n\n\n\nROT\n\nTAB NAV",
-    {
-      "c": "#8c9fe5",
-      "a": 7,
-      "f": 3
-    },
-    "EXIT",
+    "SLEEP\nLOCK",
     {
       "c": "#dfe595",
-      "n": true
-    },
-    "⎇\n\n\n\nOSM",
-    {
-      "x": 2,
+      "a": 7,
+      "f": 3,
       "n": true
     },
     "<i class='kb kb-Unicode-Control-1'></i>\n\n\n\nOSM",
+    {
+      "c": "#8c9fe5"
+    },
+    "EXIT",
+    {
+      "x": 2,
+      "c": "#dfe595"
+    },
     "⇧\n\n\n\nOSM",
+    {
+      "n": true
+    },
+    "⎇\n\n\n\nOSM",
     {
       "c": "#b0b0b0",
       "a": 5,
