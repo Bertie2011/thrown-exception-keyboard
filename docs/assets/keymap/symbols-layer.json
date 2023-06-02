@@ -91,38 +91,37 @@
   [
     {
       "y": 0.25,
-      "x": 3,
+      "x": 4,
       "c": "#fffeed",
       "p": "FLAT",
-      "w": 6.5,
-      "h": 1.5
+      "a": 5,
+      "w": 5.5,
+      "h": 1.75
     },
-    "Mod Zone"
+    "\nMod Zone"
   ],
   [
     {
       "y": -0.75,
       "x": 2.25,
-      "c": "#cccccc",
+      "c": "#b0b0b0",
       "p": "R1",
-      "a": 5,
       "f": 2
     },
     "SLEEP\nLOCK",
     {
-      "c": "#dfe595",
+      "c": "#8c9fe5",
       "a": 7,
       "f": 3,
       "n": true
     },
-    "<i class='kb kb-Unicode-Control-1'></i>\n\n\n\nOSM",
-    {
-      "c": "#8c9fe5"
-    },
     "EXIT",
     {
-      "x": 2,
       "c": "#dfe595"
+    },
+    "<i class='kb kb-Unicode-Control-1'></i>\n\n\n\nOSM",
+    {
+      "x": 2
     },
     "⇧\n\n\n\nOSM",
     {
