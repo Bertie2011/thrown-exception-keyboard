@@ -5,10 +5,13 @@
   },
   [
     {
-      "c": "#b0b0b0",
+      "c": "#dfe595",
       "a": 7
     },
-    "⌦",
+    "⎇",
+    {
+      "c": "#b0b0b0"
+    },
     "HOME",
     {
       "c": "#cccccc"
@@ -18,11 +21,15 @@
       "c": "#b0b0b0"
     },
     "END",
-    "€",
     {
-      "x": 2
+      "c": "#aee6e6"
     },
-    "⎇",
+    "<i class='kb kb-Arrows-Up-Left'></i>",
+    {
+      "x": 2,
+      "c": "#b0b0b0"
+    },
+    "€",
     {
       "c": "#cccccc"
     },
@@ -39,9 +46,10 @@
   ],
   [
     {
+      "c": "#dfe595",
       "a": 7
     },
-    "⭾",
+    "⇧",
     {
       "c": "#cccccc"
     },
@@ -52,9 +60,9 @@
     },
     "<i class='kb kb-Arrows-Right'></i>",
     {
-      "c": "#b0b0b0"
+      "c": "#aee6e6"
     },
-    "$",
+    "⭾",
     {
       "x": 0.5,
       "c": "#cccccc",
@@ -65,7 +73,7 @@
       "x": 0.5,
       "c": "#b0b0b0"
     },
-    "<i class='kb kb-Unicode-Control-1'></i>",
+    "$",
     {
       "c": "#cccccc",
       "n": true
@@ -80,18 +88,25 @@
   ],
   [
     {
-      "c": "#b0b0b0",
+      "c": "#dfe595",
       "a": 7
     },
-    "<i class='kb kb-Arrows-Up-Left'></i>",
+    "<i class='kb kb-Unicode-Control-1'></i>",
+    {
+      "c": "#b0b0b0"
+    },
     "<i class='fa fa-cut'></i>",
     "<i class='fa fa-copy'></i>",
     "<i class='fa fa-paste'></i>",
-    "%",
     {
-      "x": 2
+      "c": "#aee6e6"
     },
-    "⇧",
+    "⌦",
+    {
+      "x": 2,
+      "c": "#b0b0b0"
+    },
+    "%",
     {
       "c": "#cccccc"
     },
