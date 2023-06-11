@@ -16,12 +16,6 @@ void x_rgb_set_layer(void) {
     rgb_matrix_mode(RGB_MATRIX_CUSTOM_X_LAYER_EFFECT);
 }
 
-typedef struct RgbArgs {
-    uint8_t r;
-    uint8_t g;
-    uint8_t b;
-} RgbArgs;
-
 const uint32_t PROGMEM rgbmaps[MAX_LAYER][MATRIX_ROWS][MATRIX_COLS];
 uint8_t led_index_to_matrix_pos[RGB_MATRIX_LED_COUNT][2];
 bool xRgbInit = false;
@@ -67,7 +61,7 @@ uint32_t find_rgb_in_map(uint8_t row, uint8_t col) {
     return XXXXXXXX;
 }
 
-RgbArgs convert_bits_to_rgb(uint32_t rgb) {
+RGB convert_bits_to_rgb(uint32_t rgb) {
     uint8_t r = (rgb >> 16) & 0xFF;
     uint8_t g = (rgb >> 8) & 0xFF;
     uint8_t b = (rgb >> 0) & 0xFF;
@@ -77,7 +71,8 @@ RgbArgs convert_bits_to_rgb(uint32_t rgb) {
     g *= brightness;
     b *= brightness;
 
-    return (RgbArgs) { r = r, g = g, b = b };
+    RGB result = { .r = r, .g = g, .b = b };
+    return result;
 }
 
 bool X_LAYER_EFFECT(effect_params_t* params) {
@@ -101,7 +96,7 @@ bool X_LAYER_EFFECT(effect_params_t* params) {
         if (rgb == ________) rgb = X_LAYER_EFFECT_DEFAULT;
         if (rgb == ________) rgb = XXXXXXXX;
 
-        RgbArgs rgb_obj = convert_bits_to_rgb(rgb);
+        RGB rgb_obj = convert_bits_to_rgb(rgb);
         rgb_matrix_set_color(i, rgb_obj.r, rgb_obj.g, rgb_obj.b);
     }
     return rgb_matrix_check_finished_leds(led_max);
