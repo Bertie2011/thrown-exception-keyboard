@@ -110,12 +110,12 @@
     },
     "SLEEP\nLOCK",
     {
-      "c": "#8c9fe5",
+      "c": "#cccccc",
       "a": 7,
       "f": 3,
       "n": true
     },
-    "EXIT",
+    "⎵",
     {
       "c": "#dfe595"
     },

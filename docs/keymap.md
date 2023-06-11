@@ -15,14 +15,14 @@ This didn't feel right for me, because when I decide I want to put something on 
 My keymap contains tons of custom code and concepts. If you want to really understand what's going on or would like to try out some unique features for yourself, check out my [QMK lib folder](/qmk-lib/README.md).
 
 ## Base Layer
-The layer follows Colemak Mod-DH. The non-alpha keys have been filled by most frequently used characters. The thumb keys are occupied by a symbols layer key, space, backspace and shift. Both inner (home) thumb keys can be pressed together to activate the navigation layer. The outer thumb keys are rotary encoders with key press functionality.
+The layer follows Colemak Mod-DH. The non-alpha keys have been filled by most frequently used characters. The thumb keys are occupied by space, symbols layer, backspace and nav layer keys. Enter is created with space enter, and the home keys can be pressed at the same time for caps word functionality. The outer thumb keys are rotary encoders with key press functionality.
 
 ![Base Layer](assets/keymap/base-layer.png)
 
 ## Symbols Layer
 The symbols layer consists of 3 [zones](/qmk-lib/zones/) that together fill the entire keyboard: The symbols zone, the nav bar zone and the mod zone. Note that ESC within the nav bar zone also turns that zone off.
 
-On the right there are delete, tab and escape keys. On the bottom there is ALT on the left thumb, CTRL and SHIFT on the right thumb.
+On the right there are delete, tab and escape keys. On the bottom there is CTRL on the left thumb, SHIFT and ALT on the right thumb.
 
 ![Symbols Layer](assets/keymap/symbols-layer.png)
 
@@ -39,14 +39,14 @@ Some insights on why I picked these positions for the symbols
 * Both slash types are next to each other
 
 ## Navigations Layer
-This layer can be reached by pressing the inner thumb keys at the same time. It has arrow navigation on the left and a numpad on the right. This layer automatically deactivates when pressing space, backspace or enter. The modifiers are not one shot on this layer, since they are to be used with multiple arrow key presses.
+This layer has arrow navigation on the left and a numpad on the right. It automatically deactivates when pressing space, backspace or enter. The modifiers are not one shot on this layer, since they are to be used with multiple arrow key presses.
 
-Combos on the inner column allow opening the settings layer and starting caps word.
+Pressing the inner-most home row keys at the same time opens the settings layer.
 
 ![Nav Layer](assets/keymap/nav-layer.png)
 
 ## Settings Layer
-The settings layer only contains F-keys and some locking keys, future keys for RGB or other keyboard settings will appear here too.
+The settings layer only contains F-keys, some locking keys and keys for controlling RGB settings.
 
 ![Settings Layer](assets/keymap/settings-layer.png)
 
