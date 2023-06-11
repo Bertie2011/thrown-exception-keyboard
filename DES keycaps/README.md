@@ -1,0 +1,2 @@
+The original model files for the DES keycaps are hosted at [pseudoku/PseudoMakeMeKeyCapProfiles](https://github.com/pseudoku/PseudoMakeMeKeyCapProfiles). These files were then exported and hosted as STL
+files over at [sporkus/PseudoMakeMeKeyCapProfiles](https://github.com/sporkus/PseudoMakeMeKeyCapProfiles). I removed the brackets holding the keycaps together and reduced the amount of vertices quite a bit.
