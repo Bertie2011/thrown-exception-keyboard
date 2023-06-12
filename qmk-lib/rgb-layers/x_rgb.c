@@ -55,7 +55,7 @@ uint32_t find_rgb_in_map(uint8_t row, uint8_t col) {
         layer_state_t i_bit = (layer_state_t)1 << i;
         if ((layers & i_bit) != i_bit) continue;
 
-        uint32_t rgb = rgbmaps[i][row][col];
+        uint32_t rgb = pgm_read_dword(&rgbmaps[i][row][col]);
         if (rgb != ________) return rgb;
     }
     return XXXXXXXX;
