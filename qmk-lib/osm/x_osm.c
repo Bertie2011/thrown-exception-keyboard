@@ -19,6 +19,7 @@
 
 uint8_t x_osm_state_pressed = 0; // Bit flag for Gui, Alt, Shift, Control, repeated for right, left.
 uint8_t x_osm_state_sticky = 0;
+uint8_t x_osm_state_triggered = 0;
 uint16_t x_osm_last_press = 0;
 
 
@@ -34,21 +35,20 @@ bool x_osm(uint16_t keycode, bool pressed, uint16_t time, uint16_t reset_key) {
     #endif
 
     if (is_one_shot && pressed) {
-        // Toggle sticky-ness and make sure to make the active mods mirror that.
         x_osm_last_press = time;
-        x_osm_state_pressed |= mod_mask;
-        x_osm_state_sticky ^= mod_mask;
-        register_mods(mod_mask & x_osm_state_sticky);
+        x_osm_state_pressed |= (mod_mask & ~x_osm_state_sticky); // save as Pressed unless currently already sticky.
+        x_osm_state_sticky &= ~mod_mask; // remove stickyness
+        register_mods(mod_mask & x_osm_state_pressed);
+        unregister_mods(mod_mask & ~x_osm_state_pressed);
         X_OSM_PRINT("Marked as Pressed", x_osm_state_pressed);
         X_OSM_PRINT("Marked as Sticky", x_osm_state_sticky);
-        X_OSM_PRINT("Registered", mod_mask & x_osm_state_sticky);
+        X_OSM_PRINT("Registered", mod_mask & x_osm_state_pressed);
+        X_OSM_PRINT("Unregistered", mod_mask & ~x_osm_state_pressed);
         return false;
     } else if (is_one_shot && !pressed) {
-        // Mark mods as unstuck if time has expired
-        x_osm_state_pressed &= ~mod_mask;
-        if (time - x_osm_last_press > TAPPING_TERM) x_osm_state_sticky &= ~mod_mask;
+        if (time - x_osm_last_press <= TAPPING_TERM) x_osm_state_sticky |= (mod_mask & x_osm_state_pressed); // promote to sticky if released early enough and considered pressed
+        x_osm_state_pressed &= ~mod_mask; // remove pressed state
 
-        // Deactivate mods that are not sticky (because they were marked as unstuck due to delay or trigger key, but not deactivated yet)
         unregister_mods(mod_mask & ~x_osm_state_sticky);
         X_OSM_PRINT("Marked as Pressed", x_osm_state_pressed);
         X_OSM_PRINT("Marked as Sticky", x_osm_state_sticky);
@@ -57,7 +57,12 @@ bool x_osm(uint16_t keycode, bool pressed, uint16_t time, uint16_t reset_key) {
     } else if (is_trigger) {
         bool discard_event = keycode == reset_key && x_osm_state_sticky != 0 && x_osm_state_pressed == 0;
 
-        if (!pressed) {
+        if (pressed) {
+            uint8_t old_triggered = x_osm_state_triggered;
+            x_osm_state_triggered = x_osm_state_sticky; // replace triggred state
+            x_osm_state_sticky = 0; // remove stickyness
+            unregister_mods(old_triggered & ~x_osm_state_triggered);
+        } else {
             x_osm_clear();
         }
         return !discard_event;
@@ -70,11 +75,12 @@ void x_osm_clear(void) {
     // Remove sticky-ness and deactivate mods that are not pressed (those categorized as one-shot)
     X_OSM_PRINT("Marked as Pressed", x_osm_state_pressed);
     X_OSM_PRINT("No longer marked as Sticky", x_osm_state_sticky);
-    X_OSM_PRINT("Unregistered", x_osm_state_sticky & ~x_osm_state_pressed);
+    X_OSM_PRINT("Unregistered", x_osm_state_sticky | x_osm_state_triggered);
     #ifdef CONSOLE_X_OSM
         xprintf("Key event discarded: %u\n", discard_event);
     #endif
 
-    unregister_mods(x_osm_state_sticky & ~x_osm_state_pressed);
+    unregister_mods(x_osm_state_sticky | x_osm_state_triggered);
     x_osm_state_sticky = 0;
+    x_osm_state_triggered = 0;
 }
