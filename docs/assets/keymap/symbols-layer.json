@@ -21,7 +21,7 @@
       "p": "R1",
       "a": 7
     },
-    "⌦",
+    "<i class='kb kb-Arrows-Up-Left'></i>",
     {
       "c": "#cccccc"
     },
@@ -71,7 +71,7 @@
       "x": 0.25,
       "c": "#aee6e6"
     },
-    "<i class='kb kb-Arrows-Up-Left'></i>",
+    "⌦",
     {
       "c": "#cccccc"
     },
