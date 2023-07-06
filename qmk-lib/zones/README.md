@@ -1,9 +1,12 @@
 # Zones
 While designing my keymap I quickly realized that the modifier keys won't fit on the base layer (I didn't like the timing issues of home row mods). I didn't want to move them to a separate layer either, because that would cause too much layer switching.
 
-Introducing the concept of zones: Each zone is another layer and a group of zone layers can completely cover the keyboard (as if it was just 1 layer). Using custom code pressing a key in one zone, will turn the others off. That way each zone can be used repeatedly, while always having access to the base layer when you need it, without having to deactivate the symbols layer.
+Introducing the concept of zones: Each zone is another layer and a group of zone layers can completely cover the keyboard (as if it was just 1 layer). Using custom code pressing a key in one zone, will turn the others off. That way each zone can be used repeatedly, while always having access to the base layer when you need it, without having to deactivate the zone layer explicitly.
 
-Let's assume we have a nav bar zone (delete, tab, esc), a mod zone and we fill the remaining space with special characters (mod zone). The zone concept makes the following example sequences work:
+Let's assume we have a nav bar zone (delete, tab, esc), a mod zone and we fill the remaining space with special characters. 
+![Symbols Layer](/docs/assets/keymap/symbols-layer.png)
+
+The zone concept makes the following example sequences work:
 
 * Delete characters and type new text:
   * `SYM` (turns all zones on)
