@@ -11,6 +11,6 @@ If you want to build this keyboard yourself, here's what you need:
 * 2x [10 pcs Gateron Switches](https://aliexpress.com/item/32791600556.html), I got white/clear gateron switches which are light linear switches. I put these on the thumb keys and the two outer columns, with the purple Akko switches everywhere else.
 * 2x [25 pcs Ymdk DSA 1u keycaps](https://aliexpress.com/item/4000354001038.html), I got the Fog coloured keycaps. In theory you only need 34 keycaps, but a few keycaps extra is always nice and a set of 50 didn't cost much more.
 * [4 black knobs](https://www.amazon.nl/dp/B015IGMWTC?language=en_GB&th=1), these actually didn't fit the 6 mm shaft on the rotary encoders because of the plastic housing inside. I could expand the inner diameter with some course sandpaper though.
-* [Black 4 pin 3.5 mm jack cable of 0.5 meters](https://www.amazon.nl/dp/B00EKZR9ZK?language=en_GB), also known as a TRRS cable.
+* [Braided TRRS Cable](https://splitkb.com/collections/keyboard-parts/products/braided-trrs-cable?variant=31226379468877) and [Set of 90° Angled TRRS Adapters](https://splitkb.com/collections/keyboard-parts/products/angled-trrs-adapter)
 * [1m USB C to USB A cable](https://www.amazon.nl/dp/B07K4J6HJ3?language=en_GB)
-* [12 LouMaxx Rubber Buffers](https://www.amazon.nl/dp/B08GKP4311?language=en_GB), on each half I put 2 stacks of 2 buffers underneath the inner column/thumb cluster to cause the keyboard to tent (tilt outwards horizontally).
+* [Set of 2 Pack Foldable Feet for Keyboard Notebook](https://www.amazon.nl/-/en/Laptop-Riser-Foldable-Keyboard-Notebook/dp/B0C68V47ZT), although I currently have 1 stand on each side, I would recommend buying 2 pairs for added stability.
