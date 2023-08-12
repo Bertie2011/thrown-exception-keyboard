@@ -41,8 +41,6 @@ Some insights on why I picked these positions for the symbols
 ## Navigations Layer
 This layer has arrow navigation on the left and a numpad on the right. It automatically deactivates when pressing space, backspace or enter. The modifiers are not one shot on this layer, since they are to be used with multiple arrow key presses.
 
-Pressing the inner-most home row keys at the same time opens the settings layer.
-
 ![Nav Layer](assets/keymap/nav-layer.png)
 
 ## Settings Layer
