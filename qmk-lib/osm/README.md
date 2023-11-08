@@ -2,7 +2,7 @@
 At the time of writing, QMK one shot modifiers had some weird quirks. My one shot mod implementation has the following improvements:
 
 * I didn't like the locking/timeout behaviour, because I wanted to be fully in control.
-  * I did reintroduce the "skip one shot behaviour when held" feature, which comes i handy when using the mouse for example.
+  * I did reintroduce the "skip one shot behaviour when held" feature, which comes in handy when using the mouse for example.
 * Ability to press a specific keycode that would clear all active modifiers.
   * Hold modifiers to actually apply them to the output of the keycode.
 * Fixed a weird bug that was observed in the native QMK implementation where rolling modifiers could cause one of them to get stuck.
