@@ -83,21 +83,25 @@
     {
       "y": 0.5,
       "x": 2,
-      "a": 7,
+      "c": "#cccccc",
+      "a": 7
+    },
+    "<i class='kb kb-Arrows-Up-Left'></i>",
+    {
+      "n": true
+    },
+    "⎵",
+    {
+      "c": "#b0b0b0",
       "f": 1
     },
     "",
     {
+      "x": 2,
       "c": "#cccccc",
-      "f": 3,
-      "n": true
+      "f": 3
     },
-    "⎵",
     "SYM",
-    {
-      "x": 2
-    },
-    "<i class='kb kb-Arrows-Up-Left'></i>",
     {
       "n": true
     },
