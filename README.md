@@ -9,7 +9,7 @@ The list of sections below will start with the keymap and QMK libraries, followe
 ## Keymap
 Many keymaps make use of holding keys to distinguish from their tap behavior. However, holding keys really sucks! For me it feels like tapping two keys is less effort than holding a key. So the philosophy behind the keymap is to be **strictly tap only**. If you're curious about how that's possible and which tricks were pulled to make it easier to use click the image below.
 
-[![Keymap](docs/assets/keymap/base-layer.png)](./docs/keymap.md)
+[![Keymap](docs/assets/keymap/base-layer.jpg)](./docs/keymap.md)
 
 ## QMK Libraries
 As a programmer, I love customizing QMK to the point where my keymap.c was feeling a bit too cramped to fit all the custom code. I have isolated my keymap features into seperate source files (aka "mini QMK libraries", aka "bags of tricks") so that others can use them too.

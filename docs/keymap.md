@@ -12,43 +12,40 @@ This didn't feel right for me, because when I decide I want to put something on 
 * Exclusive layers, only 1 extra layer can be active at a time
 
 ## QMK Libraries
-My keymap contains tons of custom code and concepts. If you want to really understand what's going on or would like to try out some unique features for yourself, check out my [QMK lib folder](/qmk-lib/README.md).
+My keymap contains some custom code. If you want to really understand what's going on or would like to try out some unique features for yourself, check out my [QMK lib folder](/qmk-lib/README.md).
 
 ## Base Layer
-The layer follows Colemak Mod-DH. The non-alpha keys have been filled by most frequently used characters. The thumb keys are occupied by space, symbols layer, backspace and nav layer keys. Enter is created with space enter, and the home keys can be pressed at the same time for caps word functionality. The outer thumb keys are rotary encoders with key press functionality.
+This layer is based on Colemak Mod-DH. Although I got a little creative with the symbols, my favorite being the parentheses instead of angle brackets above the comma and period. The thumb keys are occupied by backspace, one shot shift, symbols layer and space keys. The thumb keys have several combos for the other modifiers and the numbers layer. The top left corner has escape, (using SHIFT) screen lock and (using CTRL) sleep keys. The top right corner has delete, (using SHIFT) printscreen and (using CTRL) capsword keys.
 
-![Base Layer](assets/keymap/base-layer.png)
+![Base Layer](assets/keymap/base-layer.jpg)
 
 ## Symbols Layer
-The symbols layer consists of 3 [zones](/qmk-lib/zones/) that together fill the entire keyboard: The symbols zone, the nav bar zone and the mod zone. Note that ESC within the nav bar zone also turns that zone off.
+The symbols layer consists of a clear distinction between halves, on the left there is a navigation cluster and the right is filled with symbols. The outer columns and thumb cluster (and its combos) share similarities with the base layer. Custom code is used so that the layer will only automatically deactivate when symbols, F-keys or thumb keys are pressed.
 
-On the right there are delete, tab and escape keys. On the bottom there is CTRL on the left thumb, SHIFT and ALT on the right thumb.
+![Symbols Layer](assets/keymap/symbols-layer.jpg)
 
-![Symbols Layer](assets/keymap/symbols-layer.png)
+### Navigation Cluster
+On the left you can see the arrow keys, surrounded by cut/copy/paste (WIN+V invokes the built-in clipboard history) and home/end (jump to start/end of line) keys. In the surrounding columns you can find the undo (CTRL+Z), redo (CTRL+Y), rename (F2), refresh (F5), select next occurrence (CTRL+D) and select all (CTRL+A) shortcuts. I placed the `/` on this side as well so I could (un)comment code using only one hand.
 
+### Symbols
 Some insights on why I picked these positions for the symbols
 * I'm a programmer, so access to brackets is important. I put the opening brackets on the home row, because editors often auto complete the closing brackets.
-* Logic operators & (`and`) and | (`or`) are next to each other
-* Mark down \* (`list item`) and # (`header`) are next to each other
-* The second symbol column on the left contains all symbols that indicate something will follow (`and then...`)
-* Quotes " and ` are next to each other
-* Regex symbols ^ (`start of line`) and $ (`end of line`) are next to each other
-* C# string modifiers $ (`allow variables`) and @ (`literal text with new line support`) are in the same position from each hand
-* WIN modifier is on the same key as V, allowing for rapid clipboard access (WIN + V)
-* The second symbol column on the right contains all horizontal line symbols
-* Both slash types are next to each other
+* Logic operators & (`and`) and | (`or`) are next to each other.
+* Backtick shares the same key as the other quote types underneath.
+* Symmetry with both types of slash characters.
+* Least frequently used characters share the same keys, which can be accessed using CTRL/SHIFT.
 
-## Navigations Layer
-This layer has arrow navigation on the left and a numpad on the right. It automatically deactivates when pressing space, backspace or enter. The modifiers are not one shot on this layer, since they are to be used with multiple arrow key presses.
+## Numbers Layer
+This layer has a numpad on the right. It shares the parentheses, thumb keys and some of the outer column keys with the base layer. It's worth noting that the period key is specifically the numpad version, which most apps should translate to the appropriate decimal separator (comma or period) depending on the locale. On the left you can find the common arithmetic operators as well as shortcuts for manipulating the memory (based on the Windows calculator app) and copy/paste keys in the same location as the symbols layer.
 
-![Nav Layer](assets/keymap/nav-layer.png)
+![Numbers Layer](assets/keymap/number-layer.jpg)
 
 ## Settings Layer
 The settings layer only contains F-keys, some locking keys and keys for controlling RGB settings.
 
-![Settings Layer](assets/keymap/settings-layer.png)
+![Settings Layer](assets/keymap/settings-layer.jpg)
 
 ## Game Layer
-The outer thumb key on the symbol layer will cause the keyboard to switch to this base layer. It's a simple QWERTY base layer with the left hand shifted over to bring WASD under the correct fingers. It also has another column on the left with commonly used modifier keys and an escape on one of the thumb keys.
+The outer thumb key on the symbol layer will cause the keyboard to switch to this base layer. It's a simple QWERTY base layer with the left hand shifted over to bring WASD under the correct fingers. It also has another column on the left with commonly used modifier keys.
 
-![Game Layer](assets/keymap/game-layer.png)
+![Game Layer](assets/keymap/game-layer.jpg)

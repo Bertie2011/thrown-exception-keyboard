@@ -9,23 +9,25 @@
       "a": 7
     },
     "",
-    "/",
-    "HOME",
-    "<i class='kb kb-Arrows-Up'></i>",
-    "END",
     {
       "a": 5
     },
-    "<i class='kb kb-Unicode-Control-1'></i> D\n<i class='kb kb-Unicode-Control-1'></i> A",
+    "F5\nF2",
     {
-      "x": 2,
       "a": 7
     },
-    "|",
-    "_",
-    "<",
-    ">",
+    "HOME",
+    "<i class='kb kb-Arrows-Up'></i>",
+    "END",
+    "/",
+    {
+      "x": 2
+    },
     "\\",
+    "+",
+    "}",
+    ">",
+    "]",
     {
       "a": 5
     },
@@ -47,14 +49,14 @@
     {
       "x": 2
     },
-    "+",
+    "_",
     {
       "n": true
     },
     "-",
     "{",
-    "}",
-    "`",
+    "<",
+    "[",
     "⭾"
   ],
   [
@@ -62,7 +64,7 @@
     {
       "a": 5
     },
-    "F5\nF2",
+    "<i class='kb kb-Unicode-Control-1'></i> A\n<i class='kb kb-Unicode-Control-1'></i> D",
     {
       "a": 7
     },
@@ -79,11 +81,11 @@
     {
       "x": 2
     },
-    "&",
-    "=",
-    "[",
-    "]",
     "#",
+    "=",
+    "&",
+    "|",
+    "`",
     {
       "a": 5
     },
