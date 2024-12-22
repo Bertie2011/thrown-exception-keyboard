@@ -6,7 +6,7 @@ Since getting my first split keyboard I never stopped trying to optimize my keym
 ## Material List
 If you want to build this keyboard yourself, here's what you need:
 * [Dilemma Kit](https://bastardkb.com/product/dilemma/), with 2x Rotary encoders (MX), Frost case and Per-key RGB.
-* [4mm Opal White Acrylic top plates](https://kunststofplatenshop.nl/product/plexiglas-opaalwit-4-mm/), these plates have a light transmittance of 32% and have been designed by myself. You can view the plate files [here](../dilemma%20v2%20top%20plate/).
+* [3mm Opal White Acrylic top plates](https://kunststofplatenshop.nl/product/plexiglas-opaalwit-3mm/), these plates have a light transmittance of 32% and have been designed by myself. You can view the plate files [here](../plate%20files/dilemma%20v2%20top%20plates/).
 * [Akko CS Lavendar Purple Switch (Lubed, 45pcs)](https://akkogear.de/en/products/akko-cs-lavender-purple-switch-lubed-45pcs), a light tactile switch. Akko has a US based website too.
 * 2x [10 pcs Gateron Switches](https://aliexpress.com/item/32791600556.html), I got white/clear gateron switches which are light linear switches. I put these on the thumb keys and the two outer columns, with the purple Akko switches everywhere else.
 * [DES keycaps](/DES%20keycaps), I had them printed by [JLCPCB](https://3d.jlcpcb.com/3d-printing-quote) in 8111X Resin with sanding.
