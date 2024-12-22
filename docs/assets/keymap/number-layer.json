@@ -1,0 +1,151 @@
+[
+  {
+    "backcolor": "#00000000",
+    "author": "ThrownException"
+  },
+  [
+    {
+      "a": 7
+    },
+    "",
+    "<i class='kb kb-Unicode-Control-1'></i> R",
+    "<i class='kb kb-Unicode-Control-1'></i> Q",
+    "<i class='kb kb-Unicode-Control-1'></i> P",
+    "<i class='kb kb-Unicode-Control-1'></i> M",
+    "",
+    {
+      "x": 2,
+      "c": "#b0b0b0"
+    },
+    "€",
+    {
+      "c": "#cccccc"
+    },
+    "7",
+    "8",
+    "9",
+    {
+      "c": "#b0b0b0"
+    },
+    ".",
+    {
+      "c": "#cccccc"
+    },
+    ":"
+  ],
+  [
+    "/",
+    "*",
+    "-",
+    "+",
+    {
+      "n": true
+    },
+    "<i class='kb kb-Return-2'></i>",
+    "",
+    {
+      "x": 2,
+      "c": "#b0b0b0"
+    },
+    "$",
+    {
+      "c": "#cccccc",
+      "n": true
+    },
+    "4",
+    "5",
+    "6",
+    "0",
+    "⭾"
+  ],
+  [
+    "",
+    {
+      "a": 5
+    },
+    "^",
+    {
+      "a": 7
+    },
+    "",
+    "<i class='fa fa-copy'></i>",
+    {
+      "a": 5
+    },
+    "<i class='kb kb-logo-windows-8'></i> V\n<i class='fa fa-paste'></i>",
+    {
+      "a": 7
+    },
+    "",
+    {
+      "x": 2,
+      "c": "#b0b0b0"
+    },
+    "%",
+    {
+      "c": "#cccccc"
+    },
+    "1",
+    {
+      "a": 5
+    },
+    "(\n2",
+    ")\n3",
+    {
+      "c": "#b0b0b0",
+      "a": 7
+    },
+    "-",
+    {
+      "c": "#cccccc"
+    },
+    "_"
+  ],
+  [
+    {
+      "y": 0.5,
+      "x": 3,
+      "c": "#b0b0b0",
+      "f": 1,
+      "l": true
+    },
+    "",
+    {
+      "c": "#cccccc",
+      "f": 3,
+      "n": true
+    },
+    "⎵",
+    "⇧\n\n\n\nOSM",
+    {
+      "x": 2
+    },
+    "SYM\n\n\n\nOSL",
+    {
+      "n": true
+    },
+    "⌫",
+    {
+      "c": "#b0b0b0",
+      "f": 1,
+      "l": true
+    },
+    ""
+  ],
+  [
+    {
+      "y": 0.25,
+      "x": 6.5,
+      "c": "#cccccc",
+      "f": 3,
+      "d": true
+    },
+    "EXIT",
+    {
+      "x": 0.5,
+      "c": "#8c9fe5"
+    },
+    "",
+    ""
+  ]
+]

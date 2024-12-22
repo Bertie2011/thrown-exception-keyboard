@@ -1,0 +1,2 @@
+# Custom Plate Files
+Plate files are used to create sandwich-style cases for keyboards. Each keyboard requires a bottom and a top plate for each side (so 4 plates total). The folders you see represent different types of keyboards, if a folder doesn't contain all required plate files then you should order any remaining plates from the official vendor. Please read the documentation within the folders before ordering the plates.

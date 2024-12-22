@@ -9,67 +9,97 @@
       "a": 7
     },
     "",
-    "|",
-    "&",
-    "~",
-    "^",
-    {
-      "x": 2
-    },
-    "PRT SC",
-    "_",
     "/",
+    "HOME",
+    "<i class='kb kb-Arrows-Up'></i>",
+    "END",
+    {
+      "a": 5
+    },
+    "<i class='kb kb-Unicode-Control-1'></i> D\n<i class='kb kb-Unicode-Control-1'></i> A",
+    {
+      "x": 2,
+      "a": 7
+    },
+    "|",
+    "_",
+    "<",
+    ">",
     "\\",
-    ""
+    {
+      "a": 5
+    },
+    "€\n$\n\n\n\n\n%"
   ],
   [
-    "",
-    "*",
-    ";",
+    {
+      "a": 7
+    },
+    "<i class='kb kb-Return-2'></i>",
+    "<i class='kb kb-Undo-3'></i>",
+    "<i class='kb kb-Arrows-Left'></i>",
+    "<i class='kb kb-Arrows-Down'></i>",
     {
       "n": true
     },
-    "\"",
-    "$",
+    "<i class='kb kb-Arrows-Right'></i>",
+    "<i class='kb kb-Redo-1'></i>",
     {
       "x": 2
     },
-    "@",
+    "+",
     {
       "n": true
     },
     "-",
     "{",
-    "<",
-    "["
+    "}",
+    "`",
+    "⭾"
   ],
   [
     "",
-    "#",
-    "+",
-    "`",
+    {
+      "a": 5
+    },
+    "F5\nF2",
+    {
+      "a": 7
+    },
+    "<i class='fa fa-cut'></i>",
+    "<i class='fa fa-copy'></i>",
+    {
+      "a": 5
+    },
+    "<i class='kb kb-logo-windows-8'></i> V\n<i class='fa fa-paste'></i>",
+    {
+      "a": 7
+    },
     "",
     {
       "x": 2
     },
-    "",
+    "&",
     "=",
-    "}",
-    ">",
-    "]"
+    "[",
+    "]",
+    "#",
+    {
+      "a": 5
+    },
+    "~\n^"
   ],
   [
     {
       "y": 0.5,
-      "x": 2,
+      "x": 3,
       "c": "#b0b0b0",
-      "a": 5,
+      "a": 7,
       "f": 2
     },
-    "SLEEP\nLOCK",
+    "",
     {
       "c": "#cccccc",
-      "a": 7,
       "f": 3,
       "n": true
     },
