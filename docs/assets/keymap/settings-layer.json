@@ -9,13 +9,12 @@
       "a": 7
     },
     "",
-    "INSRT",
     {
-      "c": "#cccccc",
       "f": 2
     },
-    "RGB WHITE",
-    "RGB UP",
+    "RGB HUE UP",
+    "RGB SAT UP",
+    "RGB VAL UP",
     {
       "c": "#7be87b",
       "f": 3
@@ -24,11 +23,11 @@
     {
       "c": "#b0b0b0"
     },
-    "",
+    "INSRT",
     {
       "x": 2
     },
-    "SCR LK",
+    "",
     "F9",
     "F10",
     "F11",
@@ -36,13 +35,16 @@
     ""
   ],
   [
-    "",
-    "",
     {
       "c": "#ee73ff",
       "f": 2
     },
     "RGB CYCLE",
+    {
+      "c": "#cccccc"
+    },
+    "RGB WHITE",
+    "RGB SEND",
     {
       "c": "#88f2ea"
     },
@@ -54,11 +56,12 @@
     },
     "PAUSE PLAY",
     {
-      "c": "#b0b0b0"
+      "c": "#d97777"
     },
-    "",
+    "MAKE",
     {
-      "x": 2
+      "x": 2,
+      "c": "#b0b0b0"
     },
     "",
     {
@@ -72,13 +75,12 @@
   ],
   [
     "",
-    "",
-    "",
     {
-      "c": "#c4c4c4",
       "f": 2
     },
-    "RGB DOWN",
+    "RGB HUE DOWN",
+    "RGB SAT DOWN",
+    "RGB VAL DOWN",
     {
       "c": "#60b360",
       "f": 3
@@ -87,7 +89,7 @@
     {
       "c": "#b0b0b0"
     },
-    "",
+    "SCR LK",
     {
       "x": 2
     },

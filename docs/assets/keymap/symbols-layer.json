@@ -5,6 +5,7 @@
   },
   [
     {
+      "c": "#b0b0b0",
       "p": "R1",
       "a": 7
     },
@@ -17,11 +18,18 @@
       "a": 7
     },
     "HOME",
+    {
+      "c": "#cccccc"
+    },
     "<i class='kb kb-Arrows-Up'></i>",
+    {
+      "c": "#b0b0b0"
+    },
     "END",
     "/",
     {
-      "x": 2
+      "x": 2,
+      "c": "#cccccc"
     },
     "\\",
     "+",
@@ -35,19 +43,27 @@
   ],
   [
     {
+      "c": "#b0b0b0",
       "a": 7
     },
     "<i class='kb kb-Return-2'></i>",
     "<i class='kb kb-Undo-3'></i>",
+    {
+      "c": "#cccccc"
+    },
     "<i class='kb kb-Arrows-Left'></i>",
     "<i class='kb kb-Arrows-Down'></i>",
     {
       "n": true
     },
     "<i class='kb kb-Arrows-Right'></i>",
+    {
+      "c": "#b0b0b0"
+    },
     "<i class='kb kb-Redo-1'></i>",
     {
-      "x": 2
+      "x": 2,
+      "c": "#cccccc"
     },
     "_",
     {
@@ -60,6 +76,9 @@
     "⭾"
   ],
   [
+    {
+      "c": "#b0b0b0"
+    },
     "",
     {
       "a": 5
@@ -79,7 +98,8 @@
     },
     "",
     {
-      "x": 2
+      "x": 2,
+      "c": "#cccccc"
     },
     "#",
     "=",
