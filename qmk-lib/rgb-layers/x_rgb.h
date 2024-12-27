@@ -1,6 +1,7 @@
 void x_rgb_set_white(void);
 void x_rgb_set_cycle_left_right(void);
 void x_rgb_set_layer(void);
+void x_rgb_send(void);
 
 #define XXXXXXXX 0x000000 // black
 #define OOOOOOOO 0xFFFFFF // white

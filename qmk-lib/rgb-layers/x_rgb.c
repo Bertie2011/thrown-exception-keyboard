@@ -1,15 +1,16 @@
 #include "x_rgb.h"
 #include <rgb_matrix.h>
 #include <action_layer.h>
+#include <send_string.h>
 
 void x_rgb_set_white(void) {
-    rgb_matrix_mode(RGB_MATRIX_SOLID_COLOR);
-    rgb_matrix_sethsv(0, 0, rgb_matrix_get_val());
+    rgb_matrix_mode_noeeprom(RGB_MATRIX_SOLID_COLOR);
+    rgb_matrix_sethsv_noeeprom(0, 0, rgb_matrix_get_val());
 }
 
 void x_rgb_set_cycle_left_right(void) {
-    rgb_matrix_mode(RGB_MATRIX_CYCLE_LEFT_RIGHT);
-    rgb_matrix_sethsv(0, 255, rgb_matrix_get_val());
+    rgb_matrix_mode_noeeprom(RGB_MATRIX_CYCLE_LEFT_RIGHT);
+    rgb_matrix_sethsv_noeeprom(0, 255, rgb_matrix_get_val());
 }
 
 void x_rgb_set_layer(void) {
@@ -100,4 +101,15 @@ bool X_LAYER_EFFECT(effect_params_t* params) {
         rgb_matrix_set_color(i, rgb_obj.r, rgb_obj.g, rgb_obj.b);
     }
     return rgb_matrix_check_finished_leds(led_max);
+}
+
+void x_rgb_send(void) {
+    hsv_t currentHsv = rgb_matrix_get_hsv();
+    // Normalize hsv value, since the brightness will be re-applied once the hex code is read from the keymap.
+    currentHsv.v *= ((float)255) / RGB_MATRIX_MAXIMUM_BRIGHTNESS;
+    rgb_t currentRgb = hsv_to_rgb_nocie(currentHsv);
+    SEND_STRING("0x");
+    send_byte(currentRgb.r);
+    send_byte(currentRgb.g);
+    send_byte(currentRgb.b);
 }

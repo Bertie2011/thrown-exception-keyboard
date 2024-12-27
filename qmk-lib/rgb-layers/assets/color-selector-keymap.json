@@ -1,0 +1,25 @@
+[
+  {
+    "backcolor": "#00000000",
+    "author": "ThrownException"
+  },
+  [
+    {
+      "a": 7,
+      "f": 2
+    },
+    "RGB HUE UP",
+    "RGB SAT UP",
+    "RGB VAL UP"
+  ],
+  [
+    "RGB WHITE",
+    "RGB SEND",
+    "RGB LAYERS"
+  ],
+  [
+    "RGB HUE DOWN",
+    "RGB SAT DOWN",
+    "RGB VAL DOWN"
+  ]
+]
