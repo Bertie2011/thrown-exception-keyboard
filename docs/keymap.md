@@ -15,7 +15,7 @@ This didn't feel right for me, because when I decide I want to put something on 
 My keymap contains some custom code. If you want to really understand what's going on or would like to try out some unique features for yourself, check out my [QMK lib folder](/qmk-lib/README.md).
 
 ## Base Layer
-This layer is based on Colemak Mod-DH. Although I got a little creative with the symbols, my favorite being the parentheses instead of angle brackets above the comma and period. The thumb keys are occupied by backspace, one shot shift, symbols layer and space keys. The thumb keys have several combos for the other modifiers and the numbers layer. The top left corner has escape, (using SHIFT) screen lock and (using CTRL) sleep keys. The top right corner has delete, (using SHIFT) printscreen and (using CTRL) capsword keys.
+This layer is based on Colemak Mod-DH. Although I got a little creative with the symbols, my favorite being the parentheses instead of angle brackets above the comma and period. The thumb keys are occupied by backspace, one shot shift, symbols layer and space keys. The thumb keys have several combos for the other modifiers, the numbers layer and caps word functionality. The top left corner has escape, (using SHIFT) screen lock and (using CTRL) sleep keys. The top right corner has delete and (using SHIFT) printscreen keys.
 
 ![Base Layer](assets/keymap/base-layer.jpg)
 

@@ -3,14 +3,16 @@ At the time of writing, QMK one shot modifiers had some weird quirks. My one sho
 
 * I didn't like the locking/timeout behaviour, because I wanted to be fully in control.
   * I did reintroduce the "skip one shot behaviour when held" feature, which comes in handy when using the mouse for example.
-* Ability to press a specific keycode that would clear all active modifiers.
-  * Hold modifiers to actually apply them to the output of the keycode.
+* Ability to press a specific keycode (e.g. Escape) that would clear all active modifiers.
+  * Hold modifiers to send a modified keycode (e.g. CTRL + Esc).
+* Ability to cancel a modifier by triggering it again.
 * Fixed a weird bug that was observed in the native QMK implementation where rolling modifiers could cause one of them to get stuck.
-* This implementation uses "real" modifiers, which are registerd by the operating system as soon as you activate them. (As opposed to QMK "weak" modifiers that are registered virtually and only sent to the system with the next key press.)
+* This implementation uses "real" modifiers, which are registered by the operating system as soon as you activate them. (As opposed to QMK "weak" modifiers that are registered virtually and only sent to the system with the next key press.)
 
 ## How to use
 * Start by adding the `x_osm.c` and `x_osm.h` files to your keymap folder.
 * Add `SRC += x_osm.c` to your `rules.mk` file
+* In `config.h`, add `#define TAPPING_TERM <value>` which indicates the amount of milliseconds after which a key press is considered a hold. The default value is 200, although I've been using 250 myself.
 * In `keymap.c`, make sure to add:
     ```C
     #include "x_osm.h"

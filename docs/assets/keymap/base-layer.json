@@ -27,7 +27,7 @@
       "a": 5
     },
     ":\n;",
-    "CPSW\n<i class='mss mss-Unicode-DeleteRight-Big-2'></i>\n\n\n\n\nPRNT"
+    "PRNT\n<i class='mss mss-Unicode-DeleteRight-Big-2'></i>"
   ],
   [
     {
@@ -154,15 +154,17 @@
   ],
   [
     {
-      "x": 4
-    },
-    "",
-    {
+      "x": 4,
       "g": false
     },
     "",
     {
+      "g": true
+    },
+    "",
+    {
       "x": 0.5,
+      "g": false,
       "d": true
     },
     "<i class='kb kb-logo-windows-8'></i>",
@@ -196,6 +198,30 @@
     "",
     {
       "g": false
+    },
+    ""
+  ],
+  [
+    {
+      "x": 4,
+      "g": true
+    },
+    "",
+    {
+      "g": false
+    },
+    "",
+    {
+      "x": 0.5,
+      "d": true
+    },
+    "CAPS WORD",
+    {
+      "x": 0.5
+    },
+    "",
+    {
+      "g": true
     },
     ""
   ]
