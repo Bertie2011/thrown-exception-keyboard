@@ -3,6 +3,8 @@
 #include <action_layer.h>
 #include <send_string.h>
 
+hsv_t rgb_to_hsv(rgb_t rgb);
+
 void x_rgb_set_white(void) {
     rgb_matrix_mode_noeeprom(RGB_MATRIX_SOLID_COLOR);
     rgb_matrix_sethsv_noeeprom(0, 0, rgb_matrix_get_val());
@@ -62,18 +64,16 @@ uint32_t find_rgb_in_map(uint8_t row, uint8_t col) {
     return XXXXXXXX;
 }
 
-RGB convert_bits_to_rgb(uint32_t rgb) {
+rgb_t convert_bits_to_rgb(uint32_t rgb) {
     uint8_t r = (rgb >> 16) & 0xFF;
     uint8_t g = (rgb >> 8) & 0xFF;
     uint8_t b = (rgb >> 0) & 0xFF;
 
-    float brightness = ((float)rgb_matrix_get_val()) / 255;
-    r *= brightness;
-    g *= brightness;
-    b *= brightness;
+    rgb_t rgb_obj = { .r = r, .g = g, .b = b };
+    hsv_t hsv_obj = rgb_to_hsv(rgb_obj);
+    hsv_obj.v *= ((float)rgb_matrix_get_val()) / 255;
 
-    RGB result = { .r = r, .g = g, .b = b };
-    return result;
+    return hsv_to_rgb(hsv_obj);
 }
 
 bool X_LAYER_EFFECT(effect_params_t* params) {
@@ -97,7 +97,7 @@ bool X_LAYER_EFFECT(effect_params_t* params) {
         if (rgb == ________) rgb = X_LAYER_EFFECT_DEFAULT;
         if (rgb == ________) rgb = XXXXXXXX;
 
-        RGB rgb_obj = convert_bits_to_rgb(rgb);
+        rgb_t rgb_obj = convert_bits_to_rgb(rgb);
         rgb_matrix_set_color(i, rgb_obj.r, rgb_obj.g, rgb_obj.b);
     }
     return rgb_matrix_check_finished_leds(led_max);
@@ -105,11 +105,41 @@ bool X_LAYER_EFFECT(effect_params_t* params) {
 
 void x_rgb_send(void) {
     hsv_t currentHsv = rgb_matrix_get_hsv();
-    // Normalize hsv value, since the brightness will be re-applied once the hex code is read from the keymap.
     currentHsv.v *= ((float)255) / RGB_MATRIX_MAXIMUM_BRIGHTNESS;
     rgb_t currentRgb = hsv_to_rgb_nocie(currentHsv);
     SEND_STRING("0x");
     send_byte(currentRgb.r);
     send_byte(currentRgb.g);
     send_byte(currentRgb.b);
+}
+
+hsv_t rgb_to_hsv(rgb_t rgb) {
+    float r = (float)rgb.r / 255;
+    float g = (float)rgb.g / 255;
+    float b = (float)rgb.b / 255;
+    float cMax = MAX(r, MAX(g, b));
+    float cMin = MIN(r, MIN(g, b));
+    float delta = cMax - cMin;
+    hsv_t result = { .h = 0, .s = 0, .v = cMax * 255 };
+
+    float h = 0; // Scale 0 -> 6 with looping on either side.
+    if (delta == 0) {
+        h = 0;
+    } else if (cMax == r) {
+        h = ((g - b) / delta);
+    } else if (cMax == g) {
+        h = (((b - r) / delta) + 2);
+    } else if (cMax == b) {
+        h = (((r - g) / delta) + 4);
+    }
+    // Cleanup, map to 0 -> 255
+    result.h = (int16_t)((h * 256 / 6) + 256) % 256;
+
+    if (cMax == 0) {
+        result.s = 0;
+    } else {
+        result.s = (delta / cMax) * 255;
+    }
+
+    return result;
 }
