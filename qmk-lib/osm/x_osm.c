@@ -36,8 +36,9 @@ bool x_osm(uint16_t keycode, bool pressed, uint16_t time, uint16_t reset_key) {
 
     if (is_one_shot && pressed) {
         x_osm_last_press = time;
-        x_osm_state_pressed |= (mod_mask & ~x_osm_state_sticky); // save as Pressed unless currently already sticky.
+        x_osm_state_pressed |= (mod_mask & ~x_osm_state_sticky & ~x_osm_state_triggered); // save as Pressed unless currently already sticky/triggered.
         x_osm_state_sticky &= ~mod_mask; // remove stickyness
+        x_osm_state_triggered &= ~mod_mask; // remove triggered
         register_mods(mod_mask & x_osm_state_pressed);
         unregister_mods(mod_mask & ~x_osm_state_pressed);
         X_OSM_PRINT("Marked as Pressed", x_osm_state_pressed);
@@ -48,24 +49,37 @@ bool x_osm(uint16_t keycode, bool pressed, uint16_t time, uint16_t reset_key) {
     } else if (is_one_shot && !pressed) {
         if (time - x_osm_last_press <= TAPPING_TERM) x_osm_state_sticky |= (mod_mask & x_osm_state_pressed); // promote to sticky if released early enough and considered pressed
         x_osm_state_pressed &= ~mod_mask; // remove pressed state
-
         unregister_mods(mod_mask & ~x_osm_state_sticky);
+
         X_OSM_PRINT("Marked as Pressed", x_osm_state_pressed);
         X_OSM_PRINT("Marked as Sticky", x_osm_state_sticky);
         X_OSM_PRINT("Unregistered", mod_mask & ~x_osm_state_sticky);
-        return false;
-    } else if (is_trigger) {
-        bool discard_event = keycode == reset_key && x_osm_state_sticky != 0 && x_osm_state_pressed == 0;
 
-        if (pressed) {
+        if (x_osm_state_sticky == 0 && x_osm_state_pressed == 0) {
             uint8_t old_triggered = x_osm_state_triggered;
-            x_osm_state_triggered = x_osm_state_sticky; // replace triggred state
-            x_osm_state_sticky = 0; // remove stickyness
-            unregister_mods(old_triggered & ~x_osm_state_triggered);
-        } else {
+            x_osm_state_triggered = 0;
+            unregister_mods(old_triggered);
+            X_OSM_PRINT("Unregistered", old_triggered);
+        }
+
+        return false;
+    } else if (keycode == reset_key && pressed && x_osm_state_sticky != 0 && x_osm_state_pressed == 0) {
+            x_osm_clear();
+            return false;
+    } else if (is_trigger) {
+        if (pressed) {
+            if (x_osm_state_pressed == 0) { // Only clear triggered if no mods are pressed
+                uint8_t old_triggered = x_osm_state_triggered;
+                x_osm_state_triggered = 0;
+                unregister_mods(old_triggered);
+            }
+            x_osm_state_triggered |= x_osm_state_sticky; // move to triggered state
+            x_osm_state_sticky = 0;
+
+        } else if (x_osm_state_pressed == 0) { // If trigger is released without mods pressed, clear sticky/triggered.
             x_osm_clear();
         }
-        return !discard_event;
+        return true;
     }
 
     return true;
